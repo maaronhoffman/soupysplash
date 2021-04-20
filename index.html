@@ -43,18 +43,19 @@
           </div>
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="row time-countdown justify-content-center">
-              <img style="max-width: 100%;height: auto;" class="img-fluid p-5" src="img/logo.png" alt="">
+              <img style="max-width: 100%;height: auto;padding: 5px; class="img-fluid" src="img/logo.png" alt="">
              
             </div>
             <p style="font-size: 60px;margin-bottom: 30px;">Until then, be sure to check out</p>
             <p style="font-size: 60px;">The Soupy Sales Store!</p>
+            <p>We are now redirecting you to The Soupy Sales Store!</p>
+            
            
             <div class="button-group">
               <a style="margin-bottom: 80px;" href="www.SoupyStore.com" class="btn btn-common">The Soupy Sales Store</a>
               
             </div>
-            <p>We are now redirecting you to The Soupy Sales Stor!e</p>
-            <p>Click the store button if you are not redirected in 10 seconds...</p>
+            
             <div class="social mt-4">
               
               <!-- <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
@@ -101,6 +102,9 @@
               
           ]
       });
+      $('.btn-common').click(function() {
+   window.location = "http://www.soupystore.com" + this.id;
+});
     </script>
       
   </body>
